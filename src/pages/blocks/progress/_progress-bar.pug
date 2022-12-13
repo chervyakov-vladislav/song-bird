@@ -1,0 +1,6 @@
+-var categories = ["Разминка", "Воробьиные", "Лесные птицы", "Певчие птицы", "Хищные птицы", "Морские птицы"]
+
+mixin progress-bar 
+  ul.progress-bar
+    each category in categories
+      li.progress-bar__item= category

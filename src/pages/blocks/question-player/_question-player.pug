@@ -1,0 +1,17 @@
+mixin question-player
+  .question-player.paused
+    .question-player__image
+      img.question-player__img(src=require("../../images/bird-icon.svg") alt="bird-image")
+    .question-player__container
+      .question-player__details
+        .question-player__song-name ******
+      .question-player__progress-area 
+        .question-progress-area
+          .question-progress-area__bar
+          .question-progress-area__timer 
+            span.question-progress-area__current-time 0:00
+            span.question-progress-area__tital-time 0:00
+          audio#question-audio(src="") 
+      .question-player__controls
+        +icon('question-player__play-pause', 'play-icon')
+        input(type="range" min="0" max="100" step="1" value="40").question-player__volume

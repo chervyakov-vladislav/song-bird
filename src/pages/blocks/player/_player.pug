@@ -1,0 +1,19 @@
+mixin player 
+  .player.paused
+    .player__image
+      img.player__img(src=require("../../images/bird-icon.svg") alt="bird-image")
+    .player__container
+      .player__details
+        .player__song-name Выберите птицу
+        .player__species
+        .player__desc
+      .player__progress-area 
+        .progress-area
+          .progress-area__bar
+          .progress-area__timer 
+            span.progress-area__current-time 0:00
+            span.progress-area__tital-time 0:00
+          audio#main-audio(src="") 
+      .player__controls
+        +icon('player__play-pause', 'play-icon')
+        input(type="range" min="0" max="100" step="1" value="40").player__volume

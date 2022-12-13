@@ -1,0 +1,12 @@
+include blocks/mixins
+
+doctype html
+html(lang="ru")
+  include components/head
+  body
+    main.main.song-bird
+      .container.song-bird__container 
+        +header
+        block content
+        +footer
+      

@@ -1,0 +1,11 @@
+- var items = [{ name: 'Главная', link: './index.html' },{ name: 'Игра', link: './game.html' },{ name: 'Галерея', link: './gallary.html' },{ name: 'Результат', link: './results.html' }]
+
+mixin burger-menu
+  .burger-menu 
+    button.burger-button.burger-button--unToggled
+      .burger-button__container
+    nav.burger-menu__nav
+      ul.burger-menu__list
+        each item in items
+          li.burger-menu__item 
+            a(class="burger-menu__link" href=`${item.link}`)= item.name

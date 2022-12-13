@@ -1,0 +1,8 @@
+- var items = [{ name: 'Главная', link: './index.html' },{ name: 'Игра', link: './game.html' },{ name: 'Галерея', link: './gallary.html' },{ name: 'Результат', link: './results.html' }]
+
+mixin nav
+  nav.nav
+    ul.nav__list
+      each item in items
+        li.nav__item 
+          a(class="nav__link" href=`${item.link}`)= item.name

@@ -1,0 +1,27 @@
+.nav { 
+  width: 100%;
+
+  @include phones() {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $font-color;
+  transition: .3s;
+  padding: 5px;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &--active {
+    color: $hover-color;
+  }
+}

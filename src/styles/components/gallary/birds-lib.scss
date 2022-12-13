@@ -1,0 +1,28 @@
+.birds-lib {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  user-select: none;
+}
+
+.birds-lib__item {
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: white;
+  width: 49%;
+  cursor: pointer;
+  transition: .3s;
+
+    &:hover {
+      background: $hover-color;
+    }
+
+    @include tablets {
+      width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+.question-player {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+}
+
+.question-player__image {
+  max-width: 150px;
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+
+    @include phones {
+      max-width: 100px;
+    }
+}
+
+.question-player__img {
+  width: 100%;
+  height: 100%;
+}
+
+.question-player__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.question-player__play-pause {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.question-player__progress-area  {
+  width: 100%;
+}
+
+.question-progress-area {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #7dc37d 0%, $bg-color 100%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.question-progress-area__bar {
+  height: inherit;
+  border-radius: inherit;
+  width: 1%;
+  background: $hover-color;
+  position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $font-color;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+}
+
+.question-progress-area__timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.question-player__volume {
+  background: $hover-color;
+  height: 6px;
+  width: 40%;
+  border-radius: 8px;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $font-color;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+.question-player__song-name {
+  margin-bottom: 10px;
+}

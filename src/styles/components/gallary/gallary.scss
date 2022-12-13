@@ -1,0 +1,16 @@
+.gallary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  height: 80%;
+}
+
+.gallary__player {
+  min-height: 50%;
+}
+
+.gallary__list {
+  max-height: 55%;
+  overflow-y: scroll;
+}

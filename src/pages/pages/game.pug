@@ -1,0 +1,21 @@
+extends ../layout
+
+block content
+  .game
+    .game__progress
+      +progress-bar
+    .game__container
+      .game__left
+        .game__question
+          +question-player
+        .game__answers
+          +answers
+      .game__right
+        .game__score
+          .game__score-text Счет: 0
+        .game__bird-info
+          +player
+        .game__next
+          +button('game__btn','Далее')
+    
+    

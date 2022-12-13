@@ -1,0 +1,12 @@
+.lang-btn {
+  width: 50px;
+  height: 50px;
+  background: $hover-color;
+  transition: .3s;
+  border-radius: 8px;
+  color: #fff;
+
+    &:hover {
+      background: #398639;
+    }
+}

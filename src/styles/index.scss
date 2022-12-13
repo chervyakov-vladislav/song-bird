@@ -1,0 +1,59 @@
+//vars
+@import "abstracts/_variables.scss";
+
+
+//media
+@import "base/_media.scss";
+
+
+//normalize 
+
+@import "base/_normalize.scss";
+
+
+//setups
+
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";
+@import "base/_layout.scss";
+@import "base/_keyframes.scss";
+@import "base/_icons.scss";
+
+//sections
+
+@import "sections/section.scss";
+@import "sections/song-bird.scss";
+
+// components
+
+@import "components/button.scss";
+
+//header-footer
+@import "components/header.scss";
+@import "components/game-logo.scss";
+@import "components/nav.scss";
+@import "components/footer.scss";
+@import "components/lang-btn.scss";
+@import "components/github-icon.scss";
+@import "components/rs-school-logo.scss";
+@import "components/burger-button.scss";
+@import "components/burger-menu.scss";
+
+
+// welcome
+
+@import "components/welcome/welcome.scss";
+
+// game
+
+@import "components/game/game.scss";
+@import "components/game/progress-bar.scss";
+@import "components/game/answers.scss";
+@import "components/game/question-player.scss";
+
+//gallary
+
+@import "components/gallary/gallary.scss";
+@import "components/gallary/player.scss";
+@import "components/gallary/progress-area.scss";
+@import "components/gallary/birds-lib.scss";

@@ -1,0 +1,29 @@
+.footer {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones() {
+    justify-content: space-around;
+  }
+}
+
+.footer__author {
+  display: flex;
+  align-items: center;
+}
+
+.footer__username {
+  margin-left: 10px;
+  color: $font-color;
+  transition: .3s;
+
+  @include phones() {
+    display: none;
+  }
+
+    &:hover {
+      color: $hover-color;
+    }
+}

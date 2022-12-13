@@ -1,0 +1,33 @@
+.progress-area {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #7dc37d 0%, $bg-color 100%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.progress-area__bar {
+  height: inherit;
+  border-radius: inherit;
+  width: 1%;
+  background: $hover-color;
+  position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $font-color;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+}
+
+.progress-area__timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}

@@ -1,0 +1,46 @@
+.burger-menu {
+  display: none;
+
+    @include phones {
+      display: flex;
+    }
+}
+
+.burger-menu__nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: #fff;
+  transition: .3s;
+  transform: translateX(100%);
+}
+
+.burger-menu__nav { 
+  width: 100%;
+}
+
+.burger-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.burger-menu__link {
+  text-decoration: none;
+  color: $font-color;
+  transition: .3s;
+  padding: 5px;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &--active {
+    color: $hover-color;
+  }
+}

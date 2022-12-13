@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.header__nav {
+  padding: 0 5px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.header__burger {
+  display: none;
+
+  @include phones {
+    display: flex;
+    margin-right: 30px;
+  }
+}
